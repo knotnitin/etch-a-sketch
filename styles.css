@@ -1,3 +1,7 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 h1{
     text-align: center;
 }
@@ -11,12 +15,30 @@ h1{
     border: 1px solid gray;
 }
 
-/* .box{
-    width: 32px;
-    height: 32px;
-    margin: 0;
-} */
-
 .black{
     background-color: black;
+}
+
+.size{
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 32px;
+}
+
+footer{
+    font-size: 24px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo{
+    width: 36px;
+    height: 36px;
 }
