@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 512px;
+    border: 1px solid gray;
+}
+
+.box{
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    /* text-align: center; */
+}
+
+.black{
+    background-color: black;
+}
