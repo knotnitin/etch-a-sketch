@@ -12,7 +12,6 @@ function generateGrid(gridSize){
     for(let i=0; i<gridSize; i++){
         for(let j=0; j<gridSize; j++){
             const box = document.createElement("div")
-            // box.classList.add("box")
             box.style.width = `${boxWidth}px`
             box.style.height = `${boxHeight}px`
             box.addEventListener("mouseover", changeColor)
@@ -21,12 +20,12 @@ function generateGrid(gridSize){
             //     box.classList.add('black')
             // })
             container.appendChild(box)
-            // console.log(`Appended div number ${16*i+j}`)
         }
     }
 }
 
 function setSize(){
+    // Set new size of grid. Makes it default if out of range
     let size = parseInt(prompt("Enter the number of boxes per row you want"))
     if(Number.isInteger(size) && size <= MAX_SIZE && size >= MIN_SIZE){
         gridSize = size
@@ -41,9 +40,11 @@ function setSize(){
 }
 
 function clearGrid(){
+    // Clears old grid
     while(container.firstChild) container.removeChild(container.lastChild);
 }
 
 function changeColor(e){
+    // Adds color class black to box in grid
     e.target.classList.add('black')
 }
